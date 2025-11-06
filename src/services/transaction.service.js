@@ -1,5 +1,4 @@
 import { TransactionModel } from "../models/transaction.model.js";
-import { MembershipModel } from "../models/membership.model.js";
 import { InformationModel } from "../models/information.model.js";
 import { errorResponse } from "../utils/response.js";
 import { errorThrower } from "../utils/error.js";

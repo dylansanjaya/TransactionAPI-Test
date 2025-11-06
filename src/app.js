@@ -6,13 +6,12 @@ import routes from "./routes/index.js";
 
 const app = express();
 
-// Middlewares //
 app.use(cors());
 app.use(express.json());
+app.use(errorHandler);
 
 app.use("/", routes);
 
-app.use(errorHandler);
 
 // Run migrations before starting the app //
 await runMigrations();

@@ -1,5 +1,4 @@
 import { InformationModel } from "../models/information.model.js";
-import { errorResponse } from "../utils/response.js";
 
 export const InformationService = {
   async getBanners() {
