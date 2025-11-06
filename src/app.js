@@ -13,6 +13,10 @@ app.use(express.json());
 // Swagger docs
 
 // Routes
+app.get("/", (req, res) => {
+  res.send("Welcome to the Transaction API");
+});
+
 app.use("/", routes);
 
 // Error handler
