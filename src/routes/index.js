@@ -17,9 +17,5 @@ router.use("/", informationRoutes);
 // Transaction
 router.use("/", transactionRoutes);
 
-router.get("/", (req, res) => {
-  res.send("API is running");
-});
-
 export default router;
   
