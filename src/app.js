@@ -9,11 +9,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(errorHandler);
-
 app.use("/", routes);
 
-
-// Run migrations before starting the app //
+// Run migrations before starting
 await runMigrations();
 
 export default app;
