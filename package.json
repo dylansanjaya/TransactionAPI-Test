@@ -1,1 +1,21 @@
-{"scripts":{"start":"node ./src/server.js","dev":"nodemon ./src/server.js"},"dependencies":{"bcrypt":"^6.0.0","cors":"^2.8.5","dotenv":"^17.2.3","express":"^5.1.0","jsonwebtoken":"^9.0.2","multer":"^2.0.2","pg":"^8.16.3"},"devDependencies":{"nodemon":"^3.1.10"},"type":"module"}
+{
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "build": "echo 'No build step required'",
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3",
+    "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "type": "module"
+}
