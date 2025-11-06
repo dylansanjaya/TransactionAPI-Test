@@ -1,10 +1,8 @@
-import app from "./app.js";
-import { env } from "./config/env.js";
-import serverless from "serverless-http";
+import app from "./src/app.js";
+import { env } from "./src/config/env.js";
 
-export const handler = serverless(app);
-export default app;
+const PORT = env.PORT || 3000;
 
-app.listen(env.PORT, () => {
-  console.log(`Server running at http://localhost:${env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 });

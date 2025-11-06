@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "nodemon src/app.js",
+    "dev": "node server.js",
     "build": "echo 'No build step required'",
     "start": "node src/app.js"
   },
